@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+    width: 100%;
+    height: 3rem; 
+    padding: 10px;
+    position: fixed;
+    z-index: 2;
+}
+.container{
+    display: flex; 
+    position: absolute;
+    top: 48px; 
+    z-index: 1;
+}
+.list{
+    flex: 15%;    
+}
+.list li{
+    
+    border: 0.25px solid rgb(204, 201, 201);
+    padding: 10px;
+}
+.active{
+    background-color:rgb(197, 190, 190) ;
+}
+.list li:hover{
+    background-color: rgb(197, 190, 190);
+}
+.artical{
+    flex: 85%;
+    padding: 10px;
+    margin: 10px;
+}
+.artical h1{
+    margin-bottom: 10px;   
+}
+@media screen and (max-width:1000px) {
+    .list{
+        flex: 25%;
+    }
+    .artical{
+        flex: 75%;
+    }
+}
+@media screen and (max-width:500px) {
+    .container{
+        flex-direction: column-reverse;
+    }
+    
+}

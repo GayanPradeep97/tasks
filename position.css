@@ -12,6 +12,7 @@
     width: 100%;
     position: fixed;
     height: 50px;  
+    z-index: 1;
          
 }
 .container{
@@ -20,6 +21,7 @@
     background-color: antiquewhite;
     height: 3200px;
     align-items:center;
+    z-index: 2;
         
 }
 
