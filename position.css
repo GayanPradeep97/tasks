@@ -1,10 +1,21 @@
 .heding{
     background-color: yellow;
-   
     padding: 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    position: fixed;
     
 }
 .heding h2{
-    text-align: center;
-    
+    text-align: center;   
 } 
+.container{
+    background-color: antiquewhite;
+    height: 3200px;
+}
+.img{
+    width: 200px;
+    height: 200px;
+}
