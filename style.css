@@ -14,8 +14,7 @@ span.block{
     padding: 5px;
     border: 1px solid;
   }
-  .nav{
-    
+  .nav{ 
     background-color: yellow;
     list-style: none;
     text-align: center;
@@ -31,6 +30,5 @@ span.block{
     border: 1px solid black;
     width: 50px;
     margin: 4px;
-    padding: 4px;
-    
+    padding: 4px;  
   }
