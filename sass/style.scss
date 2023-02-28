@@ -1,14 +1,14 @@
  //@import './base';
  
- @mixin reset-list {
+ @mixin reset-list ($backcolor){
     margin: 10px;
     padding: 10px;
     list-style: none;
-    background-color: rgb(74, 132, 184);
+    background-color:$backcolor;
   }
   
-  @mixin horizontal-list {
-    @include reset-list;
+  @mixin horizontal-list ($backcolor){
+    @include reset-list($backcolor);
   
     li {
       display: inline-block;
@@ -19,6 +19,12 @@
     }
   }
   
-  nav ul {
-    @include horizontal-list;
+  .first {
+    @include horizontal-list(red);
   }
+    .second{
+    @include horizontal-list(yellow);
+}
+    .third{
+    @include horizontal-list(green);
+}
