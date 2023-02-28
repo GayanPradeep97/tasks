@@ -1,0 +1,24 @@
+ //@import './base';
+ 
+ @mixin reset-list {
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    background-color: rgb(74, 132, 184);
+  }
+  
+  @mixin horizontal-list {
+    @include reset-list;
+  
+    li {
+      display: inline-block;
+      margin: {
+        left: 0px;
+        right: 2em;
+      }
+    }
+  }
+  
+  nav ul {
+    @include horizontal-list;
+  }
