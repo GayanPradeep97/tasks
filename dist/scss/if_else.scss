@@ -1,0 +1,38 @@
+@mixin para($size:2rem ,$txt-color, $rot:null){
+    font-size: $size;
+    color: $txt-color;
+
+    @if $rot == true {
+        transform: rotate(10deg);
+    }
+    @else if $rot == null{
+        transform: rotate(-30deg);
+    }
+    @else{
+        transform: rotate(0deg);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+body{
+    margin:10px 10px;
+    font-family: sans-serif;
+   
+}
+p{
+    margin: 10px;
+}
+p:nth-child(1){
+   @include para(1rem, red, true )
+
+}
+p:nth-child(2){
+    @include para(2rem, yellow, null)
+}
+p:nth-child(3){
+    @include para(3rem, green)
+}
