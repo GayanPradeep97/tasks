@@ -1,15 +1,15 @@
-@mixin para($size:2rem ,$txt-color, $rot:null){
-    font-size: $size;
-    color: $txt-color;
 
-    @if $rot == true {
-        transform: rotate(10deg);
-    }
-    @else if $rot == null{
-        transform: rotate(-30deg);
-    }
-    @else{
-        transform: rotate(0deg);
+@mixin para($size){
+    font-size: $size;
+
+    @if $size > 2rem {
+        color: red;
+
+    }@else if $size > 3rem {
+
+        color: green
+    }@else {
+        color: blue;
     }
 }
 
@@ -27,12 +27,12 @@ p{
     margin: 10px;
 }
 p:nth-child(1){
-   @include para(1rem, red, true )
+   @include para(2.1rem)
 
 }
 p:nth-child(2){
-    @include para(2rem, yellow, null)
+    @include para(3.1rem)
 }
 p:nth-child(3){
-    @include para(3rem, green)
+    @include para(1rem)
 }
